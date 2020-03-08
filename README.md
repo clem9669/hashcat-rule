@@ -52,6 +52,6 @@ Add famous number | See rule |
 Add high frequency overwrite | See rule | 
 Add high frequency prepend | See rule | 
 Add high frequency overwrite at start | See rule | 
-leetify | See rule | 
+Leetify | See rule | 
 
 

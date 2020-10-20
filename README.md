@@ -46,6 +46,10 @@ Add 1 character at the end (printable) with capitalize the first letter | Script
 Add 2 digits with capitalize the first letter| Script python | 
 Add 1 digit + 1 punctuation with capitalize the first letter| Script python | 
 Add 2 digits + 1 punctuation with capitalize the first letter| Script python | 
+Add 1 punctuation + 1 digit | Script python | 
+Add 1 punctuation + 2 digits | Script python | 
+Add 1 punctuation + 1 digit with capitalize the first letter| Script python | 
+Add 1 punctuation + 2 digits with capitalize the first letter| Script python | 
 Add all years from 1900 to 2099 | Script python | 
 Add all years from 1900 to 2099 with capitalize the first letter|Script python | 
 Add famous number | See rule | 

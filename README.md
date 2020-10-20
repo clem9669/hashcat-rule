@@ -2,7 +2,7 @@
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~4'700 rules
+> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => 11'659 rules
 
 This is for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **master password**.
 

@@ -24,7 +24,9 @@ I wanted a comprehensive rule based on people password rather than insane huge w
 Moreover getting your hands dirty give you a better understanding of what you're doing.
 
 ## What i have done : 
-> input= montagne
+
+> Input= password
+> Please see a output example in **password_ruled.txt**
 
 Exhaustive list of rules:
 
@@ -38,7 +40,7 @@ Toggle the case of all characters in word | t |
 Swaps first two characters	 | k | 
 Swaps last two characters | K | 
 Duplicate entire word	 | d | 
-Add 1 character at the end (printable) | Script python | 
+Add 1  at the end (printable) | Script python | 
 Add 2 digits |Script python | 
 Add 1 digit + 1 punctuation | Script python | 
 Add 2 digits + 1 punctuation | Script python | 
@@ -52,7 +54,12 @@ Add 1 punctuation + 1 digit with capitalize the first letter| Script python |
 Add 1 punctuation + 2 digits with capitalize the first letter| Script python | 
 Add all years from 1900 to 2099 | Script python | 
 Add all years from 1900 to 2099 with capitalize the first letter|Script python | 
+Add all caps character at the end (printable) | See rule| 
+Add all caps character + years from 1900 to 2099 | See rule| 
+Add all caps character + 1 digit | See rule| 
+Add all caps character + 1 digit + 1 punctuation | See rule| 
 Add famous number | See rule | 
+Add famous number all caps| See rule | 
 Add high frequency overwrite | See rule | 
 Add high frequency prepend | See rule | 
 Add high frequency overwrite at start | See rule | 

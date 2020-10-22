@@ -53,9 +53,12 @@ Add 1 punctuation + 2 digits | Script python |
 Add 1 punctuation + 1 digit with capitalize the first letter| Script python | 
 Add 1 punctuation + 2 digits with capitalize the first letter| Script python | 
 Add all years from 1900 to 2099 | Script python | 
+Add all years from 1900 to 2099 with ! at the end | Script python | 
 Add all years from 1900 to 2099 with capitalize the first letter|Script python | 
+Add all years from 1900 to 2099 with ! at the end with capitalize the first letter|Script python | 
 Add all caps character at the end (printable) | See rule| 
 Add all caps character + years from 1900 to 2099 | See rule| 
+Add all caps character + years from 1900 to 2099 with ! at the end | See rule| 
 Add all caps character + 1 digit | See rule| 
 Add all caps character + 1 digit + 1 punctuation | See rule| 
 Add famous number | See rule | 

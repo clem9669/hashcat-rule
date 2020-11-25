@@ -2,9 +2,9 @@
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => 11'659 rules
+> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => ~~11'659 rules~~ => 19'685 rules
 
-This is for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **master password**.
+This is for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
 
 ## Write your own rule
 
@@ -40,6 +40,8 @@ Toggle the case of all characters in word | t |
 Swaps first two characters	 | k | 
 Swaps last two characters | K | 
 Duplicate entire word	 | d | 
+Various substitutions | s |
+Title case | e |
 Add 1  at the end (printable) | Script python | 
 Add 2 digits |Script python | 
 Add 1 digit + 1 punctuation | Script python | 

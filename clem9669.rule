@@ -24618,12 +24618,16 @@ $F $r $a $n $c $e ^e ^c ^n ^a ^r ^F
 ^r ^m
 ^e ^m ^m
 ^r ^i ^s
+^s ^r ^m
+^s ^r ^M
 ^. ^r ^M
 ^. ^e ^m ^M
 ^. ^r ^i ^S
 ^. ^r ^m
 ^. ^e ^m ^m
 ^. ^r ^i ^s
+^. ^s ^r ^m
+^. ^s ^r ^M
 ^z ^z ^z ^z
 ^z ^z ^z ^z ^z
 ^e ^v ^o ^l ^i
@@ -24638,6 +24642,14 @@ $F $r $a $n $c $e ^e ^c ^n ^a ^r ^F
 ^a ^l ^e ^v ^i ^v
 ^e ^l ^e ^v ^i ^V
 ^a ^l ^e ^v ^i ^V
+^a ^l ^g
+^e ^l ^g
+^a ^l ^G
+^e ^l ^G
+^a ^l ^j
+^e ^l ^j
+^a ^l ^J
+^e ^l ^J
 # Preappend digits (date)
 ^0 ^0 ^9 ^1
 ^0 ^0 ^9 ^2

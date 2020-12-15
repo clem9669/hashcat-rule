@@ -18,6 +18,14 @@ The **medium** is only mine.
 The **small** is only adding 1 caracter (start & end). 
 It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule`
 
+```sh
+$ wc -l clem9669*
+ 81966 clem9669_big.rule
+ 26748 clem9669_medium.rule
+   191 clem9669_small.rule
+   ```
+
+
 ## Write your own rule
 
 This is the only thing you need to write your rule : **https://hashcat.net/wiki/doku.php?id=rule_based_attack**

@@ -2,23 +2,37 @@
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => ~~11'659 rules~~ => ~~19'685 rules~~ => 26'132 rules
+> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => ~~11'659 rules~~ => ~~19'685 rules~~ => ~~26'132 rules~~ => 26'748 rules
 
-This is for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
+This was for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
+
+> Update: I have extented these rules to be more than just that.
+
+The **Big** rule is :
+* clem9669
+* One Rule to Rule Them All
+* InsidePro-*
+
+The **medium** is only mine.
+
+The **small** is only adding 1 caracter (start & end). 
+It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule`
 
 ## Write your own rule
 
 This is the only thing you need to write your rule : **https://hashcat.net/wiki/doku.php?id=rule_based_attack**
 
+See examples: https://github.com/hashcat/hashcat/tree/master/rules
+
 ## Why another
-> There is already some really good rules out there but best64 is too small and bigger ones are too big.
-https://github.com/NotSoSecure/password_cracking_rules/ is good but does many random things and some result are silly.
+> There is already some really good rules out there but best64 is too small and bigger ones might be too big.
+https://github.com/NotSoSecure/password_cracking_rules/ is good but does many random things
 
 > https://github.com/praetorian-code/Hob0Rules too small or too big
 
 > https://github.com/NSAKEY/nsa-rules idem
 
-I wanted a comprehensive rule based on people password rather than insane huge wordlist converted to rule. They are doing it in the other way to get a nice graph with '*look my rule is better because i got a better coverage rate !*'.
+I wanted to make my own and i feel better using mine now. My rule are not random rules in clem9669_medium.
 
 
 Moreover getting your hands dirty give you a better understanding of what you're doing.
@@ -28,7 +42,7 @@ Moreover getting your hands dirty give you a better understanding of what you're
 > Input= password
 > Please see a output example in **password_ruled.txt**
 
-Exhaustive list of rules:
+Almost exhaustive list of rules:
 
 Action performed | Rule | Output 
 -----|-------|-------
@@ -70,4 +84,5 @@ Add high frequency prepend | See rule |
 Add high frequency overwrite at start | See rule | 
 Leetify | See rule | 
 
+AND MORE!!
 

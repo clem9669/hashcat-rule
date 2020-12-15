@@ -15,7 +15,7 @@ The **Big** rule is :
 
 The **medium** is only mine.
 
-The **small** is only adding 1 caracter (start & end). 
+The **small** is only adding 1 character (start & end). 
 It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule`
 
 ```sh

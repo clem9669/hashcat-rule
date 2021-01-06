@@ -11,7 +11,7 @@ toto = "1234567890"
 
 for i in range(1900,2200):
 	for j in b:
-		print(str(i)+str(j))
+		print(str(j)+str(i))
 
 # for i in toto:
 # 	for j in toto:

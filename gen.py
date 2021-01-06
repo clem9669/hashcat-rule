@@ -4,20 +4,25 @@ import string
 
 # print(string.digits)
 a = """!"#$ %&'()*+,-./:;<=>?@[\]^_{|}~1234567890"""
+b = """!"#$ %&'()*+,-./:;<=>?@[\]^_{|}~"""
 
 toto = "1234567890"
 
 
-for i in toto:
-	for j in toto:
-		for k in toto:
-			print("c $"+i+" $"+j+" $"+k)
+for i in range(1900,2200):
+	for j in b:
+		print(str(i)+str(j))
+
+# for i in toto:
+# 	for j in toto:
+# 		for k in toto:
+# 			print("c $"+i+" $"+j+" $"+k)
 
 
-for i in toto:
-	for j in toto:
-		for k in toto:
-			print("u $"+i+" $"+j+" $"+k)
+# for i in toto:
+# 	for j in toto:
+# 		for k in toto:
+# 			print("u $"+i+" $"+j+" $"+k)
 
 
 # for i in a:

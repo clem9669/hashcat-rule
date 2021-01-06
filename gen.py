@@ -7,17 +7,17 @@ a = """!"#$ %&'()*+,-./:;<=>?@[\]^_{|}~1234567890"""
 
 toto = "1234567890"
 
-for i in toto:
-	for j in toto:
-		print("c $d $u $"+i+" $"+j)
 
 for i in toto:
 	for j in toto:
-		print("u $d $u $"+i+" $"+j)
+		for k in toto:
+			print("c $"+i+" $"+j+" $"+k)
+
 
 for i in toto:
 	for j in toto:
-		print("$d $u $"+i+" $"+j)
+		for k in toto:
+			print("u $"+i+" $"+j+" $"+k)
 
 
 # for i in a:

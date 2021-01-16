@@ -1,22 +1,39 @@
-# hashcat-rule
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/clem9669/hashcar-rule">
+    <img src="https://www.fai.org/sites/default/files/styles/basic_page_highlighted_mlarge/public/isc/rules.jpeg" alt="Logo" width="400" height="200">
+  </a>
+
+  <h3 align="center">Hashcat-rules</h3>
+
+  <p align="center">
+    Crack people password with rules (hashcat & john)
+  </p>
+
+> check out my wordlist project at: https://github.com/clem9669/wordlists
+
+## Introduction
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> Rule for hashcat or john focused on password guessing based on medium wordlist input. ~~4'700 rules~~ => ~~11'659 rules~~ => ~~19'685 rules~~ => ~~26'132 rules~~ => 26'748 rules
+> 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as md4&md5. Small for slow hash algorithm as bcrypt.
 
 This was for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
 
 > Update: I have extented these rules to be more than just that.
 
 The **Big** rule is :
-* clem9669
+* clem9669 medium list
+* mp64 (https://hashcat.net/wiki/doku.php?id=maskprocessor)
 * One Rule to Rule Them All
-* InsidePro-*
+* InsidePro-PasswordsPro
+* InsidePro-HashManager
 
 The **medium** is only mine.
 
-The **small** is only adding 1 character (start & end). 
-It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule`
+The **small** is only adding 1 character (start & end) with toogle cases. 
+It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule` or to be used as is with low rate cracking algorithm.
 
 ```sh
 $ wc -l clem9669*
@@ -33,12 +50,15 @@ This is the only thing you need to write your rule : **https://hashcat.net/wiki/
 See examples: https://github.com/hashcat/hashcat/tree/master/rules
 
 ## Why another
-> There is already some really good rules out there but best64 is too small and bigger ones might be too big.
-https://github.com/NotSoSecure/password_cracking_rules/ is good but does many random things
 
-> https://github.com/praetorian-code/Hob0Rules too small or too big
+> There is already some really good rules out there but best64 is too small and bigger ones might be too big with too many random thing for a certain language as french.
 
-> https://github.com/NSAKEY/nsa-rules idem
+
+* https://github.com/NotSoSecure/password_cracking_rules, is good but does many random things
+
+* https://github.com/praetorian-code/Hob0Rules, too many random rules
+
+* https://github.com/NSAKEY/nsa-rules, idem
 
 I wanted to make my own and i feel better using mine now. My rule are not random rules in clem9669_medium.
 
@@ -48,7 +68,7 @@ Moreover getting your hands dirty give you a better understanding of what you're
 ## What i have done : 
 
 > Input= password
-> Please see a output example in **password_ruled.txt**
+> Please see a output example for [clem9669_large.rule](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_large.rule) in [**password_ruled.txt**](https://github.com/clem9669/hashcat-rule/blob/master/password_ruled.txt) !!
 
 Almost exhaustive list of rules:
 

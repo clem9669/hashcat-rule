@@ -114,3 +114,5 @@ Leetify | See rule |
 
 AND MORE!!
 
+It turns out that hahscat in version 6.X do not support rules with ascii extended (aka 8bits). A issue has been raise here: https://github.com/clem9669/hashcat-rule/issues/2
+A hashcat issue has been raised here: https://github.com/hashcat/hashcat/issues/2598% 

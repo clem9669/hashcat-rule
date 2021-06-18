@@ -19,7 +19,7 @@ Rule are supposed to be mutual for john and hashcat or other.
 
 > 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as md4&md5. Small for slow hash algorithm as bcrypt.
 
-This was for basic coverage of passwords for normal people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
+This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
 
 > Update: I have extented these rules to be more than just that.
 
@@ -37,9 +37,9 @@ It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem
 
 ```sh
 $ wc -l clem9669*
- 81966 clem9669_big.rule
- 26748 clem9669_medium.rule
-   191 clem9669_small.rule
+ 911435 clem9669_big.rule
+ 41475 clem9669_medium.rule
+   386 clem9669_small.rule
    ```
 
 
@@ -47,7 +47,7 @@ $ wc -l clem9669*
 
 This is the only thing you need to write your rule : **https://hashcat.net/wiki/doku.php?id=rule_based_attack**
 
-See examples: https://github.com/hashcat/hashcat/tree/master/rules
+I recommand to use [clem9669_small](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_small.rule) as a reference to start understanding how to write.
 
 ## Why another
 
@@ -64,6 +64,24 @@ I wanted to make my own and i feel better using mine now. My rule are not random
 
 
 Moreover getting your hands dirty give you a better understanding of what you're doing.
+
+## Saving which rules matched
+
+
+This becomes handy especially in combination with the rules generator but also for statistical analysis of your rule sets.
+
+To save any rule that generated a matched password use these switches:
+
+`--debug-mode=1 --debug-file=matched.rule`
+
+
+This will save the matched rule on every match, so the resulting rule file might contain many duplicate rules.
+
+> At high rates of cracking per second, this may slow down cracking a little bit. 
+> At lower rates of cracking per second, the impact is probably negligible.
+
+
+
 
 ## What i have done : 
 
@@ -113,6 +131,3 @@ Add high frequency overwrite at start | See rule |
 Leetify | See rule | 
 
 AND MORE!!
-
-It turns out that hahscat in version 6.X do not support rules with ascii extended (aka 8bits). A issue has been raise here: https://github.com/clem9669/hashcat-rule/issues/2
-A hashcat issue has been raised here: https://github.com/hashcat/hashcat/issues/2598% 

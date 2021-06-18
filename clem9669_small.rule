@@ -1,5 +1,6 @@
 # Basic Generated filters
 ## Clem9669 _ small list for multiple rules as -r clem9669_big.rule -r clem9669_small.rule
+:
 $ 
 $!
 $"
@@ -126,7 +127,6 @@ ${
 $|
 $}
 $~
-:
 ]
 ] $a
 ] ]

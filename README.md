@@ -17,11 +17,11 @@
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as md4&md5. Small for slow hash algorithm as bcrypt.
+> 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as md4 & md5. Small for slow hash algorithm as bcrypt.
 
-This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year (from 1900 to 2099) or some famous tricks (ex:p@$$w0rd) to their **password**.
+This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year or some famous tricks *(ex: p@$$w0rd)* to their **password**.
 
-> Update: I have extented these rules to be more than just that.
+> 📣 Update: I have extented these rules to be more than just that. 📣
 
 The **Big** rule is :
 * clem9669 medium list
@@ -37,8 +37,8 @@ It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem
 
 ```sh
 $ wc -l clem9669*
- 911435 clem9669_big.rule
- 41475 clem9669_medium.rule
+ 955558 clem9669_big.rule
+ 60718 clem9669_medium.rule
    386 clem9669_small.rule
    ```
 
@@ -80,8 +80,14 @@ This will save the matched rule on every match, so the resulting rule file might
 > At high rates of cracking per second, this may slow down cracking a little bit. 
 > At lower rates of cracking per second, the impact is probably negligible.
 
+## Testing and ouputing rules
 
+With hashcat we can debug our rules easily. That means we can verify that the rule we wrote actually does what we want it to do. 
+All you need to use is the **--stdout** switch and omit the hashlist. 
 
+`hashcat -r clem9669_large.rule --stdout password`
+
+See sample [password_ruled.txt](https://github.com/clem9669/hashcat-rule/blob/master/password_ruled.txt)
 
 ## What i have done : 
 

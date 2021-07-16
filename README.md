@@ -135,5 +135,13 @@ Add high frequency overwrite | See rule |
 Add high frequency prepend | See rule | 
 Add high frequency overwrite at start | See rule | 
 Leetify | See rule | 
+Preappend top 100 prenoms | See rule | 
+Preappend top adverbs | See rule | 
+Preappend top verbs | See rule | 
+Preappend top adjectives | See rule | 
+Preappend top 100 prenoms with capitalize the first letter| See rule | 
+Preappend top adverbs with capitalize the first letter| See rule | 
+Preappend top verbs with capitalize the first letter| See rule | 
+Preappend top adjectives with capitalize the first letter| See rule | 
 
 AND MORE!!

@@ -11,17 +11,22 @@
     Crack people password with rules (hashcat & john)
   </p>
 
-> check out my wordlist project at: https://github.com/clem9669/wordlists
+> Check out my wordlist project at: https://github.com/clem9669/wordlists
 
 ## Introduction
 I use hashcat (https://github.com/hashcat/hashcat/).
 Rule are supposed to be mutual for john and hashcat or other.
 
-> 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as md4 & md5. Small for slow hash algorithm as bcrypt.
+> 3 rules exists to adapt hashing algorithm speed. Large for fast hash algorithm as MD5/NTLM/MySQL3. Small for slow hash algorithm as bcrypt.
 
 This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digits, 1 punctuation, 1 digits+punctuations, 2 digits+punctuations or a year or some famous tricks *(ex: p@$$w0rd)* to their **password**.
 
 > 📣 Update: I have extented these rules to be more than just that. 📣
+
+
+## Running rules
+
+I have remove casing in Large & Medium. Please run as: `-r toggle-case.rule -r clem9669_big.rule`
 
 The **Big** rule is :
 * clem9669 medium list
@@ -29,19 +34,21 @@ The **Big** rule is :
 * One Rule to Rule Them All
 * InsidePro-PasswordsPro
 * InsidePro-HashManager
+* Fordy50K
 
-The **medium** is only mine.
+The **medium** is mine.
 
 The **small** is only adding 1 character (start & end) with toogle cases. 
 It purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule` or to be used as is with low rate cracking algorithm.
 
+### Rules size
+
 ```sh
 $ wc -l clem9669*
- 955558 clem9669_big.rule
- 60718 clem9669_medium.rule
-   386 clem9669_small.rule
-   ```
-
+ 3549903 clem9669_big.rule (50M)
+  170474 clem9669_medium.rule (3.3M)
+     374 clem9669_small.rule (1.7K)
+```
 
 ## Write your own rule
 
@@ -72,7 +79,7 @@ This becomes handy especially in combination with the rules generator but also f
 
 To save any rule that generated a matched password use these switches:
 
-`--debug-mode=1 --debug-file=matched.rule`
+`--debug-mode=4 --debug-file=matched.rule`
 
 
 This will save the matched rule on every match, so the resulting rule file might contain many duplicate rules.
@@ -98,11 +105,6 @@ Almost exhaustive list of rules:
 
 Action performed | Rule | Output 
 -----|-------|-------
-Lowercase all letters	 | l | 
-Uppercase all letters	 | u | 
-Capitalize the first letter and lower the rest | c | 
-Lowercase first found character, uppercase the rest | C | 
-Toggle the case of all characters in word | t | 
 Swaps first two characters	 | k | 
 Swaps last two characters | K | 
 Duplicate entire word	 | d | 

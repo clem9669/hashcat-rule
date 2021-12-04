@@ -1,5 +1,20 @@
 # Basic Generated filters
 :
+s -
+s .
+s _
+@ 
+c
+u
+C
+@ c
+@ C
+@ u
+E
+E@ 
+s - e-
+s . e.
+s _ e_
 $ 
 $!
 $"
@@ -372,4 +387,3 @@ TCTE
 TD
 TDTE
 TE
-u

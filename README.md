@@ -1,7 +1,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/clem9669/hashcar-rule">
+  <a href="https://github.com/clem9669/hashcat-rule">
     <img src="https://www.fai.org/sites/default/files/styles/basic_page_highlighted_mlarge/public/isc/rules.jpeg" alt="Logo" width="400" height="200">
   </a>
 

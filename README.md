@@ -1,45 +1,53 @@
-<!-- PROJECT LOGO -->
-<br />
+<!-- 我不喜欢 Anonymous，因为他们是脚本小子！-->
 <p align="center">
-  <a href="https://github.com/clem9669/hashcat-rule">
-    <img src="https://www.fai.org/sites/default/files/styles/basic_page_highlighted_mlarge/public/isc/rules.jpeg" alt="Logo" width="400" height="200">
+  <a href="https://www.github.com/TheProdigyLeague">
+    <img src="https://github.com/TheProdigyLeague/1337-script_kiddie_bs/assets/30985576/b4e6edcf-aa7e-4394-832f-a5420b1ed261" alt="Logo" width="400" height="200">
   </a>
-
-  <h3 align="center">Hashcat-rules</h3>
+  <h3 align="center">I am a script kiddie who has discovered mods.</h3>
 
   <p align="center">
-    Crack people's passwords with rules (hashcat & john)
+    I want to crack innocent civilians pwds with 1337-Rules and inspire to be like [OpenWall](https://www.openwall.com/)
   </p>
 
-> Check out my wordlist project at: https://github.com/clem9669/wordlists
+> I love clout: ~~https://github.com/clem9669/wordlists~~
 
-## Introduction
-I use hashcat (https://github.com/hashcat/hashcat/).
-Rule are supposed to be compatible for john and hashcat or others.
+# Introduction
 
-> 3 rules exists to adapt to hashing algorithm speed. Large for fast hash algorithms like MD5/NTLM/MySQL3. Small for slow hash algorithms like bcrypt.
+I copied other Criminal Organizations code (https://github.com/hashcat/hashcat/).
+当我有足够的追随者时。我将能够与其他开发人员一起压缩我的代码！(John The Ripper - OpenWall)
 
-This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digit, 1 punctuation, 1 digit+punctuation, 2 digits+punctuation or a year or some other famous tricks *(ex: p@$$w0rd)* to their **password**.
+> "Nothing is more hateful than too much cleverness, in the eyes of wisdom..." - Anonymous
 
-> 📣 Update: I have extended these rules to be more than just that. 📣
+> "Hash Algorithms use security" - clem9669
 
+* 85f16fd7953ac25474fccef0e98551c1 - md5
+* 1edd09f3720ee8138b6b595a9db8c884 - ntlm
+~~* MySQL3~~
 
-## Running rules
+![moresql](https://github.com/TheProdigyLeague/1337-script_kiddie_bs/assets/30985576/7b54fb3b-9c0c-4918-95a0-ab3995ceeb5f)
 
-I have removed casing in Large & Medium. Please run as: `-r toggle-case.rule -r clem9669_big.rule`
+* $2y$04$m86Rj6NSIjArC4GCUWhWpu33YQoRYHiTmWDoqZXRH556d1Io7/D6 - *bcrypt*/**blowfish**
 
-The **Big** rule is :
-* clem9669 medium list
-* mp64 (https://hashcat.net/wiki/doku.php?id=maskprocessor)
-* One Rule to Rule Them All
-* InsidePro-PasswordsPro
+I personally cover my **hashcat** project and I think people are un-educated (like, Yokels...) because I have hacked people. They have pwds like, password1!, Password1!, or a year (202120221!) or some other basic password *(ex: p@$$w0rd)* to their social media accounts.
+
+> 📣 Update: I still love clout. 📣
+
+## Run
+
+Run as: `-r toggle-case.rule -r clem9669_big.rule`
+
+My **Big** rule list is :
+* myclem9669.lst
+* mp64 (https://hashcat.net/wiki/doku.php?id=maskprocessor) Because I like lists and acronyms.
+~~* One Rule to Rule Them All~~
+~~* InsidePro-pwdsPro
 * InsidePro-HashManager
 * Fordy50K
 
-The **medium** is mine.
+**medium** is only adding 2 chars
+**small** is only adding 1 chars (start & end) with toggle cases. 
 
-The **small** is only adding 1 character (start & end) with toogle cases. 
-Its purpose is to be combined with others rules as: `-r clem9669_big.rule -r clem9669_small.rule` or to be used as is with low rate cracking algorithms.
+It's purpose is to be combined with other rules, such as: `-r clem9669_big.rule -r clem9669_small.rule` or to be used 'as is' with low rate cracking algorithms. (hashcat)
 
 ### Rules size
 
@@ -50,100 +58,101 @@ $ wc -l clem9669*
      374 clem9669_small.rule (1.7K)
 ```
 
-## Write your own rules
+#### Write end-user own rules
 
-This is the only thing you need to write your rules : **https://hashcat.net/wiki/doku.php?id=rule_based_attack**
+The only thing that our usrs need to write end-user rules is : **https://hashcat.net/wiki/doku.php?id=rule_based_attack**
 
-I recommend using [clem9669_small](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_small.rule) as a reference to start understanding how to write rules.
+It is called a "Rule Based Attack":
+* Because I have clout.
+* Because criminals subscribe to my service.
+* Because my users have called it based.
 
-## Why another
+[clem9669_small](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_small.rule) How to crack passwords.
 
-> There are already some really good rules out there but best64 is too small and bigger ones might be too big with too many random things when targeting a certain language like french.
+#### Best64
 
+> I know there are already some really good rules out there. But, best64 is too small, imo, and bigger ones might be too big, imo, with too many random things when targeting innocent, law-obiding people:
 
-* https://github.com/NotSoSecure/password_cracking_rules, is good but does many random things
+**Here are some other script kiddies that I have copied from...**
 
-* https://github.com/praetorian-code/Hob0Rules, too many random rules
+* https://github.com/NotSoSecure/password_cracking_rules
+
+* https://github.com/praetorian-code/Hob0Rules
 
 * https://github.com/NSAKEY/nsa-rules, idem
 
-I wanted to make my own and I feel better using mine now. My rules are not random rules in clem9669_medium.
+I clem9669, wanted to imitate and mimic other cool hackers. So, I decided to start my own project. clem9669_medium. Moreover, LEO does absolutely nothing about cyber-crime. So, We get to have our cake and eat it too. Because, now, my end-users are forced to pay attention to cySec and gives us, The Criminal Organization, better understanding of अंतिम उपयोगकर्ता.
 
+#### Rules
 
-Moreover getting your hands dirty gives you a better understanding of what you're doing.
-
-## Saving which rules matched
-
-
-This becomes handy especially in combination with the rules generator but also for statistical analysis of your rule sets.
-
-To save any rule that generated a matched password, use these switches:
+Rules are handy when hackers combine generator rules. Like, merikens...It provides MLMers a statistical analysis of our End-Users rule data sets provided by government cyphers. To save any rule that generated a matched password, use these switches:
 
 `--debug-mode=4 --debug-file=matched.rule`
 
+This will save a matched rule, every match. So, it is a resulting rule file that may contain many code duplicates.
 
-This will save the matched rule on every match, so the resulting rule file might contain many duplicate rules.
+> "At high rates of cracking per second, this may slow down cracking a little bit." - clem6996
+> "At lower rates of cracking per second, the impact is probably negligible." - clem6996
 
-> At high rates of cracking per second, this may slow down cracking a little bit. 
-> At lower rates of cracking per second, the impact is probably negligible.
+#### Test
 
-## Testing and ouputing rules
+![hashcat](https://github.com/TheProdigyLeague/1337-script_kiddie_bs/assets/30985576/82d291ec-4aff-4595-a7bf-3d3de97876ba)
 
-With hashcat we can debug our rules easily. This means we can verify that the rule we wrote actually does what we want it to do. 
-All you need to use is the **--stdout** switch and omit the hashlist. 
+With hashcat I can debug my own rules easily. This means that I can verify end-users rules that I wrote and it actually does what they want it to do. 
 
-`hashcat -r clem9669_large.rule --stdout password`
+The end-usr needs to use `--stdout Switch | d6c05af6dd57323f4d2bcbb2ec5a5aa7 | hashcat -r clem9669_large.rule --stdout password`
 
 See sample [password_ruled.txt](https://github.com/clem9669/hashcat-rule/blob/master/password_ruled.txt)
 
-## What I have done : 
+#### Done
 
-> Input= password
-> Please see a output example for [clem9669_large.rule](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_large.rule) in [**password_ruled.txt**](https://github.com/clem9669/hashcat-rule/blob/master/password_ruled.txt) !!
+> Input = 969ab142a5c9552f5491fbbe1ceefce3
 
-Almost exhaustive list of rules:
+output: [clem9669_large.rule](https://github.com/clem9669/hashcat-rule/blob/master/clem9669_large.rule) in [**password_ruled.txt**](https://github.com/clem9669/hashcat-rule/blob/master/password_ruled.txt)
+
+lst:
 
 Action performed | Rule | Output 
 -----|-------|-------
-Swaps first two characters	 | k | 
-Swaps last two characters | K | 
-Duplicate entire word	 | d | 
-Various substitutions | s |
-Title case | e |
-Add 1  at the end (printable) | Script python | 
-Add 2 digits |Script python | 
-Add 1 digit + 1 punctuation | Script python | 
-Add 2 digits + 1 punctuation | Script python | 
-Add 1 character at the end (printable) with capitalize the first letter | Script python | 
-Add 2 digits with capitalize the first letter| Script python | 
-Add 1 digit + 1 punctuation with capitalize the first letter| Script python | 
-Add 2 digits + 1 punctuation with capitalize the first letter| Script python | 
-Add 1 punctuation + 1 digit | Script python | 
-Add 1 punctuation + 2 digits | Script python | 
-Add 1 punctuation + 1 digit with capitalize the first letter| Script python | 
-Add 1 punctuation + 2 digits with capitalize the first letter| Script python | 
-Add all years from 1900 to 2099 | Script python | 
-Add all years from 1900 to 2099 with ! at the end | Script python | 
-Add all years from 1900 to 2099 with capitalize the first letter|Script python | 
-Add all years from 1900 to 2099 with ! at the end with capitalize the first letter|Script python | 
-Add all caps character at the end (printable) | See rule| 
-Add all caps character + years from 1900 to 2099 | See rule| 
-Add all caps character + years from 1900 to 2099 with ! at the end | See rule| 
-Add all caps character + 1 digit | See rule| 
-Add all caps character + 1 digit + 1 punctuation | See rule| 
-Add famous number | See rule | 
-Add famous number all caps| See rule | 
-Add high frequency overwrite | See rule | 
-Add high frequency prepend | See rule | 
-Add high frequency overwrite at start | See rule | 
-Leetify | See rule | 
-Preappend top 100 prenoms | See rule | 
-Preappend top adverbs | See rule | 
-Preappend top verbs | See rule | 
-Preappend top adjectives | See rule | 
-Preappend top 100 prenoms with capitalize the first letter| See rule | 
-Preappend top adverbs with capitalize the first letter| See rule | 
-Preappend top verbs with capitalize the first letter| See rule | 
-Preappend top adjectives with capitalize the first letter| See rule | 
+🔄 first two Персонажи	 | k |
+🔄 last two Персонажи | K |
+code depulicate of entire word	 | d |
+var subs | s |
+header case | e |
++ 1 digit at end print | script.py |
++ 2 digits | script.py |
++ 1 digit + 1 punctuation | script.py |
++ 2 digits + 1 punctuation | script.py |
++ 1 char at end print with capitalized first letter | script.py |
++ 2 digits with capitalized first letter | script.py |
++ 1 digit + 1 punctuation with capitalized first letter | script.py |
++ 2 digits + 1 punctuation with capitalized first letter | script.py |
++ 1 punctuation + 1 digit | script.py |
++ 1 punctuation + 2 digits | script.py |
++ 1 punctuation + 1 digit with capitalized first letter | script.py |
++ 1 punctuation + 2 digits with capitalize the first letter | script.py |
++ all years from 1900 to 2099 | script.py |
++ all years from 1900 to 2099 with ! at lines end | script.py |
++ all years from 1900 to 2099 with capitalized first letter|script.py |
++ all years from 1900 to 2099 with ! at lines end with capitalized first letter | script.py |
++ all caps chars at lines end with (printable) | See rule |
++ all caps chars + years from 1900 to 2099 | See rule |
++ all caps chars + years from 1900 to 2099 with ! at lines end | See rule |
++ all caps chars + 1 digit | See rule |
++ all caps chars + 1 digit + 1 punctuation | See rule |
++ famous number | See rule |
++ famous number + all caps | See rule |
++ high frequency overwrite | See rule |
++ high frequency prepend | See rule |
++ high frequency overwrite at start | See rule |
+leetify | See rule |
+إضافة مسبقة top 100 prenoms | See rule |
+إضافة مسبقة top adverbs | See rule |
+إضافة مسبقة top verbs | See rule |
+إضافة مسبقة top adjectives | See rule |
+إضافة مسبقة top 100 prenoms with capitalized first letter | See rule |
+إضافة مسبقة top adverbs with capitalized first letter | See rule |
+إضافة مسبقة top verbs with capitalized first letter | See rule |
+إضافة مسبقة top adjectives with capitalized first letter | See rule |
 
-AND MORE!!
+-- eof --

@@ -21,7 +21,7 @@ Rule are supposed to be compatible for john and hashcat or others.
 
 This was for basic coverage of passwords for non-educated people who only add 1 letter, 1 digit, 1 punctuation, 1 digit+punctuation, 2 digits+punctuation or a year or some other famous tricks *(ex: p@$$w0rd)* to their **password**.
 
-> 📣 Update: I have extented these rules to be more than just that. 📣
+> 📣 Update: I have extended these rules to be more than just that. 📣
 
 
 ## Running rules

@@ -44,10 +44,13 @@ Its purpose is to be combined with others rules as: `-r clem9669_big.rule -r cle
 ### Rules size
 
 ```sh
-$ wc -l clem9669*
- 3549903 clem9669_big.rule (50M)
-  170474 clem9669_medium.rule (3.3M)
-     374 clem9669_small.rule (1.7K)
+$ wc -l *.rule
+      19 clem9669_case.rule
+ 4091517 clem9669_large.rule
+  179552 clem9669_medium.rule
+     386 clem9669_small.rule
+    5715 emojis.rule
+ 4277189 total
 ```
 
 ## Write your own rules

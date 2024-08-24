@@ -148,5 +148,9 @@ Preappend top 100 prenoms with capitalize the first letter| See rule |
 Preappend top adverbs with capitalize the first letter| See rule | 
 Preappend top verbs with capitalize the first letter| See rule | 
 Preappend top adjectives with capitalize the first letter| See rule | 
+Tmesis keyword (app/sec/api/secret/db/srv/...) |
+Tmesis characters |
+Tmesis names |
+Connexion strings (rdp://, ssh://, ftp://,...) |
 
 AND MORE!!
